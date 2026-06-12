@@ -1,0 +1,42 @@
+QMenuBar {
+    background-color: #2a2e32;
+    color: #eff0f1;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    color: #eff0f1;
+    padding: 4px 8px;
+}
+
+QMenuBar::item:selected {
+    background-color: #0080aa;
+    color: #ffffff;
+}
+
+QMenu {
+    background-color: #2a2e32;
+    color: #eff0f1;
+    border: 1px solid #3daee9;
+}
+
+QMenu::item {
+    background-color: transparent;
+    color: #eff0f1;
+    padding: 4px 24px;
+}
+
+QMenu::item:selected {
+    background-color: #0080aa;
+    color: #ffffff;
+}
+
+QMenu::item:disabled {
+    color: #6d7a86;
+}
+
+QMenu::separator {
+    background: #3d4145;
+    height: 1px;
+    margin: 3px;
+}
