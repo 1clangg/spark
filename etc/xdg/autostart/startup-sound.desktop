@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=System Startup Sound
+Exec=bash -c "sleep 3 && mpg123 -q /usr/share/spark/login.mp3"
+Terminal=false
+X-LXQt-Module=true
