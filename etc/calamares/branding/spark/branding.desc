@@ -1,0 +1,38 @@
+---
+componentName:   spark
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+
+strings:
+    productName:         Spark GNU/Linux
+    shortProductName:    Spark Linux
+    version:             3
+    shortVersion:        3
+    versionedName:       Spark Linux 3
+    shortVersionedName:  Spark Linux 3
+    bootloaderEntryName: Spark Linux
+    productUrl:          https://sparklinux.my.canva.site/
+    supportUrl:          https://sparklinux.my.canva.site/
+    knownIssuesUrl:      https://bugs.debian.org
+    releaseNotesUrl:     https://sparklinux.my.canva.site/download
+    donateUrl:           https://www.debian.org
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         "debian-logo.png"
+    productIcon:         "debian-logo.png"
+    productWelcome:      "welcome.png"
+
+slideshow:             ""
+
+style:
+   SidebarBackground:    "#26475b"
+   SidebarText:          "#FFFFFF"
+   SidebarTextCurrent:   "#fbfbfb"
+   SidebarBackgroundCurrent: "#265370"
+
