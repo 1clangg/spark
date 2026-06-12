@@ -1,0 +1,14 @@
+[Unit]
+Description=Spark IRQ Balanced Tuning
+After=multi-user.target
+
+[Service]
+Type=oneshot
+# Spread IRQs across all cores evenly
+ExecStart=/usr/sbin/irqbalance --oneshot 2>/dev/null || true
+# Boost network IRQ priority slightly
+ExecStart=/bin/bash -c 'for irq in $(grep -l "eth\|wlan\|enp\|wlp" /proc/irq/*/actions 2>/dev/null | cut -d/ -f4); do echo 6 > /proc/irq/$irq/smp_affinity_lis>
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
