@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=sparkPlymouth
+Description=Beta animation
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/sparkPlymouth
+ScriptFile=/usr/share/plymouth/themes/sparkPlymouth/sparkPlymouth.script
