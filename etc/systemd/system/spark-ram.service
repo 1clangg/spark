@@ -1,0 +1,23 @@
+[Unit]
+Description=Spark RAM Balanced Tuning
+After=multi-user.target
+
+[Service]
+Type=oneshot
+# THP madvise — apps request when needed
+ExecStart=/bin/bash -c 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled'
+ExecStart=/bin/bash -c 'echo defer+madvise > /sys/kernel/mm/transparent_hugepage/defrag'
+# KSM off — saves CPU, RAM merging not worth it on desktop
+ExecStart=/bin/bash -c 'echo 0 > /sys/kernel/mm/ksm/run 2>/dev/null || true'
+# Drop cold caches on boot for clean start
+ExecStart=/bin/bash -c 'sync && echo 1 > /proc/sys/vm/drop_caches'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
