@@ -357,7 +357,7 @@ apt install -y \
   zram-tools \
   gamemode \
   ananicy-cpp
-
+apt install -y systemd-resolved
 apt update && apt install qml6-module-qtquick-controls qml6-module-qtquick-layouts qml6-module-qtquick-shapes qml6-module-qtquick-templates qml6-module-org-kde-kirigami libkf6i18nqml6
 apt install -y \
   lynis \
