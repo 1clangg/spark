@@ -158,7 +158,7 @@ Script setup.sh sẽ thực hiện các bước sau:
 * Cấu hình GRUB bootloader
 * Tối ưu hiệu năng hệ thống
 ---
-## 7. Xuất ISO
+## 7. Cấu hình build ISO
 
 Trước khi build ISO trong Cubic, cần đảm bảo cấu hình:
 
@@ -167,12 +167,50 @@ Trước khi build ISO trong Cubic, cần đảm bảo cấu hình:
 * Compression: LZO
 * Giữ hệ thống tối giản, tránh thêm package không cần thiết
 
+---
+## 7.1. Làm ISO có thể khởi động (Bootable)
+Sau khi hoàn tất mọi thay đổi trong môi trường chroot, bạn cần bổ sung các thành phần bootloader của Spark Linux trước khi xuất ISO.
+
+### 1. Tải mã nguồn Spark Linux trên máy host
+
+Tải mã nguồn Spark Linux trên hệ thống host:
+
+```bash
+git clone https://github.com/1clangg/spark.git
+```
+
+Hoặc tải mã nguồn dưới dạng tệp .zip từ GitHub và giải nén.
+
+### 2. Sao chép thư mục boot
+
+Trong mã nguồn Spark Linux, tìm thư mục: `boot/`
+
+Sao chép thư mục này vào thư mục project của Cubic.
+
+### 3. Cấu hình Custom Disk
+
+Trong thư mực project, tìm thư mực tên là `custom-disk`.
+
+Từ thư mục boot/ của Spark Linux, sao chép các tệp vào cấu trúc ISO như sau:
+
+| Nguồn (spark/boot/)       | Đích (project/custom-disk/)  |
+| ---------------- | ------------------ |
+| boot/grub/* | boot/grub/      |
+| boot/isolinux/*     | isolinux/ |
+
+Ghi đè các tệp hiện có nếu được yêu cầu.
+
+## 8. Hoàn tất việc build ISO
+Giờ thì, bấm build ISO thôii :>.
+
 **Sau khi hoàn tất:**
 
 * Cubic sẽ đóng gói hệ thống thành ISO bootable
 * File ISO sẽ được xuất trong thư mục output của Cubic project
+
+
 ---
-8. Xử lý lỗi
+## Xử lý lỗi
 
 Trong quá trình build, có thể xảy ra lỗi do môi trường chroot hoặc dependency.
 
