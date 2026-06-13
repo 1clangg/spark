@@ -6,5 +6,5 @@ chmod +x ../plymouth/install.sh
 ../plymouth/install.sh
 
 # patch 
-plymouth-set-default-theme sparkPlymouth
+plymouth-set-default-theme -R sparkPlymouth
 update-initramfs -u
