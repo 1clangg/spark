@@ -371,6 +371,9 @@ apt install -y \
 apt install qt5-style-kvantum -y
 apt install -y xsettingsd picom
 apt install -y flatpak xdg-desktop-portal xdg-desktop-portal-gtk
-
+apt install -y \
+  breeze-icon-theme \
+  breeze-cursor-theme \
+  breeze-gtk-theme
 curl -s 'https://liquorix.net/install-liquorix.sh' | bash
 
