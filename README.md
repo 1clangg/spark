@@ -1,5 +1,16 @@
+<p align="right">
+  🇻🇳 Tiếng Việt | <a href="README-EN.md">🇺🇸 English</a>
+</p>
+
 <p align="center">
   <img src="assets/logo.png" alt="Spark Linux" width="540">
+</p>
+
+<p align="center">
+  <img alt="License" src="https://img.shields.io/github/license/1clangg/spark?style=for-the-badge">
+  <img alt="Stars" src="https://img.shields.io/github/stars/1clangg/spark?style=for-the-badge">
+  <img alt="Issues" src="https://img.shields.io/github/issues/1clangg/spark?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Sponsored%20by-Unikorn.vn-8b5cf6?style=for-the-badge" alt="Sponsored by Unikorn">
 </p>
 
 <h1 align="center">Spark Linux</h1>
@@ -10,8 +21,6 @@
 
 <p align="center">
   Một bản phân phối Linux siêu nhẹ được phát triển tại Việt Nam 🇻🇳
-  <br>
-  Được tài trợ bởi Unikorn.vn ✨
 </p>
 
 <p align="center">
@@ -30,13 +39,12 @@ Dự án tập trung vào hiệu năng thực tế, giao diện tinh gọn và s
 
 ## Tính năng nổi bật
 
-* Khởi động nhanh, phản hồi mượt mà
+* Khởi động nhanh và phản hồi mượt mà
 * Tối ưu cho cả phần cứng cũ và mới
 * Giao diện hiện đại, trực quan
 * Tiêu thụ ít tài nguyên hệ thống
 * Tôn trọng quyền riêng tư của người dùng
 * Mã nguồn mở và hoàn toàn miễn phí
-* Được xây dựng và phát triển tại Việt Nam
 
 ---
 
@@ -54,7 +62,7 @@ Thay vì chạy theo sự phức tạp, Spark tập trung vào trải nghiệm c
 
 Xem hướng dẫn chi tiết tại:
 
-```text id="4h8m3w"
+```text
 assets/build-docs.md
 ```
 
@@ -74,6 +82,46 @@ Xem tệp `LICENSE` để biết thêm thông tin.
 
 ---
 
+## Cảm ơn
+
+Spark Linux được xây dựng dựa trên những dự án mã nguồn mở tuyệt vời đã góp phần tạo nên hệ sinh thái Linux ngày nay.
+
+### Nhà tài trợ
+
+* **Unikorn.vn** ✨
+
+### Nền tảng và thành phần cốt lõi
+
+* Debian, nền tảng hệ điều hành
+  https://github.com/debian
+
+* Linux kernel (Liquorix và Zen), nhân hệ điều hành
+  https://github.com/zen-kernel/zen-kernel
+
+* Liquorix package, gói kernel tối ưu hiệu năng
+  https://github.com/damentz/liquorix-package
+
+* LXQt Desktop Environment, môi trường desktop nhẹ và hiện đại
+  https://github.com/lxqt
+
+* Cubic, công cụ tùy biến và đóng gói ISO
+  https://git.launchpad.net/cubic
+
+### Giao diện và chủ đề
+
+* Dark Breeze LXQt Theme
+  https://www.opencode.net/nudnik/lxqt-theme-dark-breeze-by-nudnik/
+
+* Openbox Theme
+  https://www.gnome-look.org/p/2119028
+
+* KDE Breeze Icons
+  https://github.com/kde/breeze-icons
+
+---
+
 <p align="center">
   Made with ❤️ in Vietnam
+  <br>
+  © Spark Linux Project
 </p>
