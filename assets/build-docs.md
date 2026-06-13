@@ -88,6 +88,7 @@ Spark Linux sử dụng ISO Debian LXQt làm base:
 
 Bạn cần tải ISO chính thức trước khi bắt đầu Cubic.
 
+> [!CAUTION]
 > **Lưu ý về phiên bản Debian**
 >
 > Hiện tại, script của Spark Linux chỉ hỗ trợ build đến phiên bản Debian 13.5, nếu bạn cố gắng chạy script trên 1 phiên bản mới hơn của Debian, nó có thể break luôn / của Debian.
