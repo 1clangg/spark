@@ -1,0 +1,12 @@
+PRETTY_NAME="sparkNext eXcute Developer AMD64 (Cubic 2026-06-13 16:22)"
+NAME="Spark GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.5
+ID=debian
+HOME_URL="https://sparklinux.space"
+SUPPORT_URL="https://unikorn.vn/p/spark-linux"
+BUG_REPORT_URL="https://unikorn.vn/p/spark-linux"
+IMAGE_ID=live
+BUILD_ID=20260516T094204Z
