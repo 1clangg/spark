@@ -317,7 +317,10 @@ apt install -y \
   fonts-inter \
   fonts-jetbrains-mono \
   fonts-noto-color-emoji
-
+apt install -y \
+  breeze-icon-theme \
+  breeze-cursor-theme \
+  breeze-gtk-theme
 apt install -y \
   pipewire \
   pipewire-pulse \
